@@ -31,10 +31,9 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>시간표</h2>
-                        <div class="container">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  학년-반
+                                    학년-반
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" onclick="toggleImg1()">1-1</a></li>
@@ -45,9 +44,8 @@
                                     <li><a class="dropdown-item" onclick="toggleImg6()">1-6</a></li>
                                 </ul>
                             </div>
-                            <img id="img" src="./image/1-1 시간표.jpg" />
-                          </div>
-                          <script>
+                        <img id="img" src="./image/1-1 시간표.jpg" />
+                        <script>
                             function toggleImg1() {
                               document.getElementById("img").src = "./image/1-1 시간표.jpg";
                             }
@@ -66,7 +64,7 @@
                             function toggleImg6() {
                               document.getElementById("img").src = "./image/1-6 시간표.jpg";
                             }
-                          </script>
+                        </script>
                     </div>
                 </div>
             </div>
@@ -90,7 +88,19 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>일정표</h2>
-                        <p class="lead">최대한 효율적으로 줄 서는 방법</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./image/평일 시정표.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./image/토요일 시정표.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./image/일요일 시정표.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,12 +112,75 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>학사력</h2>
-                        <p class="lead">누가 내 옷을 훔쳐가지 않도록!!!</p>
+                        <form>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    년-월
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" onclick="Month2202()">2022-02</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2203()">2022-03</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2204()">2022-04</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2205()">2022-05</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2206()">2022-06</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2207()">2022-07</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2208()">2022-08</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2209()">2022-09</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2210()">2022-10</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2211()">2022-11</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2212()">2022-12</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2301()">2023-01</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2302()">2023-02</a></li>
+                                </ul>
+                            </div>
+                            <img id="cal" src="./image/1-1 시간표.jpg" />
+                            <script>
+                                function Month2202() {
+                                    document.getElementById("cal").src = "./image/1-2 시간표.jpg";
+                                }
+                                function Month2203() {
+                                    document.getElementById("cal").src = "./image/22-03 학사력.jpg";
+                                }
+                                function Month2204() {
+                                    document.getElementById("cal").src = "./image/22-04 학사력.jpg";
+                                }
+                                function Month2205() {
+                                    document.getElementById("cal").src = "./image/22-05 학사력.jpg";
+                                }
+                                function Month2206() {
+                                    document.getElementById("cal").src = "./image/22-06 학사력.jpg";
+                                }
+                                function Month2207() {
+                                    document.getElementById("cal").src = "./image/22-07 학사력.jpg";
+                                }
+                                function Month2208() {
+                                    document.getElementById("cal").src = "./image/22-08 학사력.jpg";
+                                }
+                                function Month2209() {
+                                    document.getElementById("cal").src = "./image/22-09 학사력.jpg";
+                                }
+                                function Month2210() {
+                                    document.getElementById("cal").src = "./image/22-10 학사력.jpg";
+                                }
+                                function Month2211() {
+                                    document.getElementById("cal").src = "./image/22-11 학사력.jpg";
+                                }
+                                function Month2212() {
+                                    document.getElementById("cal").src = "./image/22-12 학사력.jpg";
+                                }
+                                function Month2301() {
+                                    document.getElementById("cal").src = "./image/23-01 학사력.jpg";
+                                }
+                                function Month2302() {
+                                    document.getElementById("cal").src = "./image/23-02 학사력.jpg";
+                                }
+                            </script>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-4"><p class="m-0 text-center text-white"></p></div>
