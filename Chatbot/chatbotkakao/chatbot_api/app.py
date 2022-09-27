@@ -36,7 +36,8 @@ def get_answer_from_engine(bottype, query):
 
 @app.route('/', methods=['GET'])
 def index():
-    print('hello')
+    return 'hello', 200
+
 
 # 챗봇 엔진 query 전송 API
 @app.route('/query/<bot_type>', methods=['POST'])
@@ -44,18 +45,25 @@ def query(bot_type):
     body = request.get_json()
 
     try:
-        if bot_type == "TEST":
+        if bot_type == 'TEST':
             # 챗봇 API 테스트
             ret = get_answer_from_engine(bottype=bot_type, query=body['query'])
             return jsonify(ret)
 
         elif bot_type == "KAKAO":
             # 카카오톡 스킬 처리
-            pass
+            body = request.get_json()
+            utterance = body['userRequest']['utterance']
+            ret = get_answer_from_engine(bottype=bot_type, query=utterance)
+
+            from KakaoTemplate import KakaoTemplate
+            skillTemplate = KakaoTemplate()
+            return skillTemplate.send_response(ret)
 
         elif bot_type == "NAVER":
-            # 네이버톡톡 Web hook 처리
+            # 네이버톡톡 이벤트 처리
             pass
+
         else:
             # 정의되지 않은 bot type인 경우 404 오류
             abort(404)
