@@ -118,6 +118,7 @@
                                     년-월
                                 </button>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" onclick="Month2201()">2022-01</a></li>
                                     <li><a class="dropdown-item" onclick="Month2202()">2022-02</a></li>
                                     <li><a class="dropdown-item" onclick="Month2203()">2022-03</a></li>
                                     <li><a class="dropdown-item" onclick="Month2204()">2022-04</a></li>
@@ -133,10 +134,13 @@
                                     <li><a class="dropdown-item" onclick="Month2302()">2023-02</a></li>
                                 </ul>
                             </div>
-                            <img id="cal" src="./image/1-1 시간표.jpg" />
+                            <img id="cal" src="./image/22-01 학사력.jpg" />
                             <script>
+                                 function Month2201() {
+                                    document.getElementById("cal").src = "./image/22-01 학사력.jpg";
+                                }
                                 function Month2202() {
-                                    document.getElementById("cal").src = "./image/1-2 시간표.jpg";
+                                    document.getElementById("cal").src = "./image/22-02 학사력.jpg";
                                 }
                                 function Month2203() {
                                     document.getElementById("cal").src = "./image/22-03 학사력.jpg";
