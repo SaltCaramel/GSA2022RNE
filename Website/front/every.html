@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>GSA 알리미</title>
+        <link rel="icon" type="image/x-icon" href="assets/광곽 아이콘.ico">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body id="page-top">
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+                    <div class="container px-4">
+                        <a class="navbar-brand" href="index.html">GSA alrim</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#class">시간표</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#after-school">방과후</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#day">일정표</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#calender">학사력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+        <!-- 시간표 section-->
+        <section id="class">
+            <div class="container px-10">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>시간표</h2>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    학년-반
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" onclick="toggleImg1()">1-1</a></li>
+                                    <li><a class="dropdown-item" onclick="toggleImg2()">1-2</a></li>
+                                    <li><a class="dropdown-item" onclick="toggleImg3()">1-3</a></li>
+                                    <li><a class="dropdown-item" onclick="toggleImg4()">1-4</a></li>
+                                    <li><a class="dropdown-item" onclick="toggleImg5()">1-5</a></li>
+                                    <li><a class="dropdown-item" onclick="toggleImg6()">1-6</a></li>
+                                </ul>
+                            </div>
+                        <img id="img" src="./image/1-1 시간표.jpg" />
+                        <script>
+                            function toggleImg1() {
+                              document.getElementById("img").src = "./image/1-1 시간표.jpg";
+                            }
+                            function toggleImg2() {
+                              document.getElementById("img").src = "./image/1-2 시간표.jpg";
+                            }
+                            function toggleImg3() {
+                              document.getElementById("img").src = "./image/1-3 시간표.jpg";
+                            }
+                            function toggleImg4() {
+                              document.getElementById("img").src = "./image/1-4 시간표.jpg";
+                            }
+                            function toggleImg5() {
+                              document.getElementById("img").src = "./image/1-5 시간표.jpg";
+                            }
+                            function toggleImg6() {
+                              document.getElementById("img").src = "./image/1-6 시간표.jpg";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 방과후 section-->
+        <section class="bg-light" id="after-school">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>방과후</h2>
+                        <img src="./image/방과후.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 일정표 section-->
+        <section id="day">
+            <div class="container px-10">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>일정표</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./image/평일 시정표.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./image/토요일 시정표.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="./image/일요일 시정표.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 학사력 section-->
+        <section class="bg-light" id="calender">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>학사력</h2>
+                        <form>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    년-월
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" onclick="Month2201()">2022-01</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2202()">2022-02</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2203()">2022-03</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2204()">2022-04</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2205()">2022-05</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2206()">2022-06</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2207()">2022-07</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2208()">2022-08</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2209()">2022-09</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2210()">2022-10</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2211()">2022-11</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2212()">2022-12</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2301()">2023-01</a></li>
+                                    <li><a class="dropdown-item" onclick="Month2302()">2023-02</a></li>
+                                </ul>
+                            </div>
+                            <img id="cal" src="./image/22-01 학사력.jpg" />
+                            <script>
+                                var now=new Date();
+                                var year=now.getYear();
+                                var month=now.getMonth();
+                                if(year==2022 && month==1){
+                                    Month2201();
+                                }
+                                else if(year==2022 && month==2){
+                                    Month2202();
+                                }
+                                else if(year==2022 && month==3){
+                                    Month2203();
+                                }
+                                else if(year==2022 && month==4){
+                                    Month2204();
+                                }
+                                else if(year==2022 && month==5){
+                                    Month2205();
+                                }
+                                else if(year==2022 && month==6){
+                                    Month2206();
+                                }
+                                else if(year==2022 && month==7){
+                                    Month2207();
+                                }
+                                else if(year==2022 && month==8){
+                                    Month2208();
+                                }
+                                else if(year==2022 && month==9){
+                                    Month2209();
+                                }
+                                else if(year==2022 && month==10){
+                                    Month2210();
+                                }
+                                else if(year==2022 && month==11){
+                                    Month2211();
+                                }
+                                else if(year==2022 && month==12){
+                                    Month2212();
+                                }
+                                else if(year==2023 && month==1){
+                                    Month2301();
+                                }
+                                else if(year==2023 && month==2){
+                                    Month2302();
+                                }
+                                
+                                 function Month2201() {
+                                    document.getElementById("cal").src = "./image/22-01 학사력.jpg";
+                                }
+                                function Month2202() {
+                                    document.getElementById("cal").src = "./image/22-02 학사력.jpg";
+                                }
+                                function Month2203() {
+                                    document.getElementById("cal").src = "./image/22-03 학사력.jpg";
+                                }
+                                function Month2204() {
+                                    document.getElementById("cal").src = "./image/22-04 학사력.jpg";
+                                }
+                                function Month2205() {
+                                    document.getElementById("cal").src = "./image/22-05 학사력.jpg";
+                                }
+                                function Month2206() {
+                                    document.getElementById("cal").src = "./image/22-06 학사력.jpg";
+                                }
+                                function Month2207() {
+                                    document.getElementById("cal").src = "./image/22-07 학사력.jpg";
+                                }
+                                function Month2208() {
+                                    document.getElementById("cal").src = "./image/22-08 학사력.jpg";
+                                }
+                                function Month2209() {
+                                    document.getElementById("cal").src = "./image/22-09 학사력.jpg";
+                                }
+                                function Month2210() {
+                                    document.getElementById("cal").src = "./image/22-10 학사력.jpg";
+                                }
+                                function Month2211() {
+                                    document.getElementById("cal").src = "./image/22-11 학사력.jpg";
+                                }
+                                function Month2212() {
+                                    document.getElementById("cal").src = "./image/22-12 학사력.jpg";
+                                }
+                                function Month2301() {
+                                    document.getElementById("cal").src = "./image/23-01 학사력.jpg";
+                                }
+                                function Month2302() {
+                                    document.getElementById("cal").src = "./image/23-02 학사력.jpg";
+                                }
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white"></p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

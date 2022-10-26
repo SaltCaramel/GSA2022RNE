@@ -1,0 +1,28 @@
+{
+  "name": "node-project",
+  "version": "1.0.0",
+  "description": "RNE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaltCaramel/GSA2022RNE.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "saltcaramel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaltCaramel/GSA2022RNE/issues"
+  },
+  "homepage": "https://github.com/SaltCaramel/GSA2022RNE#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.10"
+  }
+}
