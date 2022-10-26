@@ -1,11 +1,15 @@
 import socket
 import json
+<<<<<<< HEAD
 from flask import Blueprint, request, render_template, flash, redirect, url_for
 from flask import current_app as app
+=======
+>>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
 
 # 챗봇 엔진 서버 접속 정보
 host = "127.0.0.1"  # 챗봇 엔진 서버 IP 주소
 port = 5050  # 챗봇 엔진 서버 통신 포트
+<<<<<<< HEAD
 """
 main = Blueprint('main', __name__, url_prefix='x')
 
@@ -21,6 +25,9 @@ def every():
 def chatbot():
     return render_template('index.html')
 """
+=======
+
+>>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
 # 클라이언트 프로그램 시작
 while True:
     print("질문 : ")
