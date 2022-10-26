@@ -41,7 +41,6 @@
                     <div class="col-lg-8">
                         <h2>급식</h2>
                         <p class="lead">최대한 효율적으로 줄 서는 방법</p>
-
                     </div>
                 </div>
             </div>
@@ -66,6 +65,8 @@
                     <div class="col-lg-8">
                         <h2>자습시간</h2>
                         <p class="lead">오늘의 자감은?</p>
+                        <img id="img" src="./image/자습감독.jpg" />
+                        <p class="lead">개인적인 사정에 의해서 일부 변경될 수 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +76,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>운동장</h2>
+                        <h2>체육활동</h2>
                         <p class="lead">나의 소중한 자유시간, 운동장은 내 차지다.</p>
                     </div>
                 </div>
@@ -107,7 +108,7 @@
             function scroll() {
                 var currentScrollValue = document.documentElement.scrollTop;
                 if(window.innerWidth >= 100) {
-                    document.querySelector('#side_chatbot').style.top = (currentScrollValue+200)+"px";
+                    document.querySelector('#side_chatbot').style.top = (currentScrollValue+300)+"px";
                     document.querySelector('#side_chatbot').style.transition = "0.3s";
                 }
             }
