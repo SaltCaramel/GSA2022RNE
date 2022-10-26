@@ -5,10 +5,7 @@ import json
 host = "127.0.0.1"  # 챗봇 엔진 서버 IP 주소
 port = 5050  # 챗봇 엔진 서버 통신 포트
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
 # 클라이언트 프로그램 시작
 while True:
     print("질문 : ")

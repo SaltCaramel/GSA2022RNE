@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 const { Router, request } = require('express');
-=======
->>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
 const express=require('express');
 const app=express();
 
@@ -19,12 +16,6 @@ app.use(function(req, res, next) {
 		'</body></html>'
 	);
 });
-
-<<<<<<< HEAD
 app.listen(8080, function() {});
 
 
-
-=======
-app.listen(8080, function() {});
->>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c

@@ -4,12 +4,8 @@
   "description": "RNE",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon main.js"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
   },
   "repository": {
     "type": "git",
@@ -26,11 +22,7 @@
   },
   "homepage": "https://github.com/SaltCaramel/GSA2022RNE#readme",
   "dependencies": {
-<<<<<<< HEAD
     "express": "^4.18.1",
     "node-fetch": "^3.2.10"
-=======
-    "express": "^4.18.1"
->>>>>>> 618cddf0841d40e362b19244f4a59334ffad6d7c
   }
 }
