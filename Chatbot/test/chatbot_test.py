@@ -38,9 +38,15 @@ print("=" * 100)
 from utils.FindAnswer import FindAnswer
 
 try:
-    f = FindAnswer(query)
-    answer_text, answer_image = f.search(intent_name, query)
-    answer = f.tag_to_word(predicts, answer_text)
+    if intent_name == "욕설":
+        answer = "욕하지 마세요 ㅠㅠ"
+
+    elif intent_name == "기타":
+        answer = "죄송해요. 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+
+    else:
+        f = FindAnswer(db)
+        answer_text, answer_image = f.search(intent_name, query)
 except:
     answer = "죄송해요 무슨 말인지 모르겠어요"
 

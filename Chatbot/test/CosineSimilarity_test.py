@@ -1,6 +1,6 @@
 from utils.CosineSimilarity import Similarity
 
 s = Similarity()
-x = s.findAns(sentence1="도서관은 언제 이용할 수 있어?", sentence2="서울과학고는 어떤 학교야?")
+x = s.findAns(sentence1="광주과학고등학교는 어떤 학교인가요?", sentence2="광주과학고등학교는 무슨 학교야?")
 
 print(x)

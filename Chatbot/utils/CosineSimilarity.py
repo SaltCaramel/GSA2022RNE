@@ -10,19 +10,6 @@ class Similarity:
     def cos_sim(self, vec1, vec2):
         return dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 
-    """
-    # TDM 만들기 : 단어 문서 행렬
-    def make_term_doc_mat(self, sentence_bow, word_dics):
-        freq_mat = {}
-        for word in word_dics:
-            freq_mat[word] = 0
-
-        for word in word_dics:
-            if word in sentence_bow:
-                freq_mat[word] += 1
-        return freq_mat
-    """
-
     # 단어 벡터 만들기
     def make_vector(self, tdm):
         vec = []
@@ -78,6 +65,3 @@ class Similarity:
         r1 = Similarity.cos_sim(self,vec1=doc1, vec2=doc2)
 
         return r1
-
-
-

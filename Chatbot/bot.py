@@ -51,12 +51,19 @@ def to_client(conn, addr, params):
         ner_predicts = ner.predict(query)
         ner_tags = ner.predict_tags(query)
 
-
         # 답변 검색
         try:
-            f = FindAnswer(db)
-            answer_text, answer_image = f.search(intent_name, query)
-            answer = f.tag_to_word(ner_predicts, answer_text)
+            if intent_name == "욕설":
+                answer = "욕하지 마세요 ㅠㅠ"
+                answer_image = None
+
+            elif intent_name == "기타":
+                answer = "죄송해요. 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                answer_image = None
+
+            else:
+                f = FindAnswer(db)
+                answer, answer_image = f.search(intent_name, query)
 
         except:
             answer = "죄송해요, 무슨 말인지 모르겠어요. 조금 더 공부 할게요."

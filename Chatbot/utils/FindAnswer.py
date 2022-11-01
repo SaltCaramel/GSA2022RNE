@@ -11,8 +11,9 @@ class FindAnswer:
 
     def findAnswer(self, intent_name, query):
         db = None
+
         try:
-            # DB 호스트 정보에 맞게 입력해주세요
+
             db = pymysql.connect(
                 host=DB_HOST,
                 user=DB_USER,
@@ -42,8 +43,6 @@ class FindAnswer:
                     finquery = querydb
                     finans = answerdb
 
-
-
             return finans
 
         except Exception as e:
@@ -62,15 +61,3 @@ class FindAnswer:
 
         return (answer, None)
 
-    # NER 태그를 실제 입력된 단어로 변환
-    def tag_to_word(self, ner_predicts, answer):
-
-        for word, tag in ner_predicts:
-
-            # 변환해야하는 태그가 있는 경우 추가
-            if tag == 'B_FOOD' or tag == 'B_DT' or tag == 'B_TI':
-                answer = answer.replace(tag, word)
-
-        answer = answer.replace('{', '')
-        answer = answer.replace('}', '')
-        return answer
