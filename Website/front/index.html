@@ -6,7 +6,7 @@
         <title>GSA 알리미</title>
         <link rel="icon" type="image/x-icon" href="assets/광곽 아이콘.ico">
         <link rel="stylesheet" href="css/styles.css">
-    </head>5
+    </head>
     <body id="page-top">
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -16,10 +16,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#page-top">홈</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#bob">급식</a></li>
                         <li class="nav-item"><a class="nav-link" href="#clothes">빨래</a></li>
                         <li class="nav-item"><a class="nav-link" href="#teacher">자습시간</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#stadium">운동장</a></li>
                         <li class="nav-item"><a class="nav-link" href="every.html">기타</a></li>
                     </ul>
                 </div>
@@ -34,20 +32,8 @@
             </div>
         </header>
 
-        <!-- 급식 section-->
-        <section id="bob">
-            <div class="container px-10">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>급식</h2>
-                        <p class="lead">최대한 효율적으로 줄 서는 방법</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- 빨래 section-->
-        <section class="bg-light" id="clothes">
+        <section id="clothes">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -59,7 +45,7 @@
         </section>
 
         <!-- 자습시간 section-->
-        <section id="teacher">
+        <section class="bg-light" id="teacher">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -72,20 +58,11 @@
             </div>
         </section>
 
-        <section class="bg-light" id="stadium">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>체육활동</h2>
-                        <p class="lead">나의 소중한 자유시간, 운동장은 내 차지다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white"></p></div>
+            <div class="container px-4"><p class="m-0 text-center text-white">
+                <a href="https://open.kakao.com/o/ssbGjQNe" target="blank">사이트 버그 제보</a>
+            </p></div>
         </footer>
 
         <div id="side_chatbot" class="chatbot" style="position:absolute;right:0;">
@@ -108,7 +85,7 @@
             function scroll() {
                 var currentScrollValue = document.documentElement.scrollTop;
                 if(window.innerWidth >= 100) {
-                    document.querySelector('#side_chatbot').style.top = (currentScrollValue+300)+"px";
+                    document.querySelector('#side_chatbot').style.top = (currentScrollValue+360)+"px";
                     document.querySelector('#side_chatbot').style.transition = "0.3s";
                 }
             }
