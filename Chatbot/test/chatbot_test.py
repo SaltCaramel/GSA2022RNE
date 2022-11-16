@@ -31,7 +31,6 @@ ner_tags = ner.predict_tags(query)
 print("질문 : ", query)
 print("=" * 100)
 print("의도 파악 : ", intent_name)
-print("개체명 인식 : ", predicts)
 print("=" * 100)
 
 # 답변 검색
@@ -46,7 +45,7 @@ try:
 
     else:
         f = FindAnswer(db)
-        answer_text, answer_image = f.search(intent_name, query)
+        answer, answer_image = f.search(intent_name, query)
 except:
     answer = "죄송해요 무슨 말인지 모르겠어요"
 
