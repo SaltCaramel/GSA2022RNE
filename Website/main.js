@@ -7,8 +7,8 @@ const server = http.createServer(app);
 const { Server } = require("socket.io"); 
 const io = new Server(server);
 
-/*
-// public 폴더하위의 파일들을 기본으로 서비스
+
+// 폴더하위의 파일들을 기본으로 서비스
 app.use(express.static('front'));
 
 // 페이지를 찾을 수 없음 오류 처리
@@ -23,8 +23,9 @@ app.use(function(req, res, next) {
 	);
 });
 app.listen(8080, function() {});
-*/
 
+
+/*
 // localhost:3000으로 방문 시 index.html로 라우팅
 app.get('/', (req, res) => { res.sendFile(__dirname + '/Arduino.html'); }); 
 // socket이 connection 상태일때 
@@ -44,8 +45,7 @@ socket.on('disconnect', () => {
 server.listen(3000, () => {
 	console.log('listening on *:3000'); 
 });
-
-
+*/
 
 
 

@@ -14,8 +14,7 @@ db = Database(
 )
 db.connect()    # 디비 연결
 
-query = "광주과학고등학교는 어떤 학교인가요?"
-
+query = "학생회 기구 알려주세요!"
 # 의도 파악
 from models.intent.IntentModel import IntentModel
 intent = IntentModel(model_name='../models/intent/intent_model.h5', proprocess=p)

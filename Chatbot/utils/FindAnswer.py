@@ -38,7 +38,13 @@ class FindAnswer:
                 querydb = qnadict["query"]
                 answerdb = qnadict["answer"]
                 x = self.s.findAns(sentence1=querydb, sentence2=query)
-                if maxsimquery <= x:
+                #TEST CODE
+                print("Query : " + querydb + ", ans :" + answerdb + ", Sim : " + str(x));
+                if x > 0.5:
+                    finquery = querydb
+                    finans = answerdb
+                    return finans
+                elif maxsimquery <= x:
                     maxsimquery = x
                     finquery = querydb
                     finans = answerdb
