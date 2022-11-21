@@ -14,8 +14,7 @@ db = Database(
 )
 db.connect()    # 디비 연결
 
-query = "광주과학고등학교는 어떤 학교인가요?"
-
+query = "학생회 기구 알려주세요!"
 # 의도 파악
 from models.intent.IntentModel import IntentModel
 intent = IntentModel(model_name='../models/intent/intent_model.h5', proprocess=p)
@@ -31,7 +30,6 @@ ner_tags = ner.predict_tags(query)
 print("질문 : ", query)
 print("=" * 100)
 print("의도 파악 : ", intent_name)
-print("개체명 인식 : ", predicts)
 print("=" * 100)
 
 # 답변 검색
@@ -46,7 +44,7 @@ try:
 
     else:
         f = FindAnswer(db)
-        answer_text, answer_image = f.search(intent_name, query)
+        answer, answer_image = f.search(intent_name, query)
 except:
     answer = "죄송해요 무슨 말인지 모르겠어요"
 

@@ -5,7 +5,7 @@ p = Preprocess(word2index_dic='../train_tools/dict/chatbot_dict.bin',
                userdic='../utils/user_dic.tsv')
 
 intent = IntentModel(model_name='../models/intent/intent_model.h5', proprocess=p)
-query = "이 거지같은 R&E"
+query = "봉사활동은 어떻게 하나요?"
 predict = intent.predict_class(query)
 predict_label = intent.labels[predict]
 

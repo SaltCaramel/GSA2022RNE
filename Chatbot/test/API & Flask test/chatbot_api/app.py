@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, abort
 import socket
 import json
+import time
 
 from flask_cors import CORS
 
@@ -14,6 +15,7 @@ app = Flask(__name__)
 
 CORS(app)
 app.config['JSON_AS_ASCII'] = False
+
 
 
 
@@ -50,11 +52,38 @@ def index():
 def query(query):
     try:
         # 챗봇 API 테스트
-        print("Connected");
+        print("Connected")
         print('query', query)
         ret = get_answer_from_engine(bottype="TEST", query=query)
         print('ret', ret)
         return ret
+
+    except Exception as ex:
+        # 오류 발생시 500 오류
+        abort(500)
+
+
+laundry = 0
+@app.route('/laundry', methods=['GET'])
+def laundry():
+    try:
+        print("laundry has arrived")
+        laundry = 1
+        time.sleep(172800)
+        laundry = 0
+
+    except Exception as ex:
+        # 오류 발생시 500 오류
+        abort(500)
+
+@app.route('/laundrycheck', methods=['GET'])
+def laundryCheck():
+    try:
+        print("Client checked laundry")
+        if laundry == 1:
+            return 1
+        else:
+            return 0
 
     except Exception as ex:
         # 오류 발생시 500 오류
