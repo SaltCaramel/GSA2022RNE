@@ -6,6 +6,16 @@
         <title>GSA 알리미</title>
         <link rel="icon" type="image/x-icon" href="assets/광곽 아이콘.ico">
         <link rel="stylesheet" href="css/styles.css">
+        <script>
+            var link1="laundryed.html";
+            var link2="laundrying.html";
+            function func(){
+                if(laundry()==1)
+                    location.replace('link1');
+                else if(laundry()==0)
+                    location.replace('link2');
+            }
+        </script>
     </head>
     <body id="page-top">
         <!--Navbar-->
@@ -39,6 +49,7 @@
                     <div class="col-lg-8">
                         <h2>빨래</h2>
                         <p class="lead">누가 내 옷을 훔쳐가지 않도록!!!</p>
+                        <input type="button" value="빨래" onclick="fucn()"/>
                     </div>
                 </div>
             </div>
