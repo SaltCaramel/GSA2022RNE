@@ -16,8 +16,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['JSON_AS_ASCII'] = False
 
-
-
+laundry = 0
 
 # 챗봇 엔진 서버와 통신
 def get_answer_from_engine(bottype, query):
@@ -63,9 +62,10 @@ def query(query):
         abort(500)
 
 
-laundry = 0
+
 @app.route('/laundry', methods=['GET'])
-def laundry():
+def Laundry():
+    global laundry
     try:
         print("laundry has arrived")
         laundry = 1
@@ -77,13 +77,13 @@ def laundry():
         abort(500)
 
 @app.route('/laundrycheck', methods=['GET'])
-def laundryCheck():
+def laundrycheck():
     try:
         print("Client checked laundry")
         if laundry == 1:
-            return 1
+            return "1"
         else:
-            return 0
+            return "0"
 
     except Exception as ex:
         # 오류 발생시 500 오류
