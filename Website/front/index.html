@@ -7,10 +7,11 @@
         <link rel="icon" type="image/x-icon" href="assets/광곽 아이콘.ico">
         <link rel="stylesheet" href="css/styles.css">
         <script>
+            let str=laundry();
             function func(){
-                if(laundry()=="1")
+                if(str=='1')
                     location.replace("laundryed.html");
-                else if(laundry()=="0")
+                else if(str=='0')
                     location.replace('laundrying.html');
             }
         </script>
